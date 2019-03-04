@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,32 +12,47 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="1.5"
         android:src="@drawable/logos"
         android:scaleType="fitCenter"
         />
-
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:hint="@string/username"
+        android:text="@string/thankyou"
+        android:textSize="60dp"
         android:textColor="@color/colorText"
-        android:textColorHint="@color/colorDivider"
-        android:backgroundTint="@color/colorDivider"
-        android:textSize="18dp" />
+        android:gravity="center"
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:inputType="textPassword"
-        android:hint="@string/password"
-        android:textSize="18dp"
-        android:textColorHint="@color/colorDivider"
-        android:backgroundTint="@color/colorDivider"
-        android:textColor="@color/colorText"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        >
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:background="@drawable/ic_done_black_24dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:text="@string/success"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center"
+            android:fontFamily="sans-serif-thin"
+            />
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -49,46 +63,22 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="1"
             android:orientation="vertical">
             >
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:orientation="vertical">
-            >
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="2"
-                android:text="@string/signIn"
                 android:background="@drawable/rounded_buttton"
+                android:clickable="true"
+                android:text="@string/letsgo"
                 android:textAllCaps="false"
                 android:textColor="#ffffff"
-                android:textSize="18dp"
-                android:clickable="true"
                 android:onClick="deals"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:orientation="vertical">
+                android:textSize="18dp" />
         </LinearLayout>
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:text="@string/forgetpasword"
-        android:textColor="@color/colorPrimaryText"
-        android:textAlignment="center"
-        android:textSize="14dp"
-        android:clickable="true"
-        />
 </LinearLayout>

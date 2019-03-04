@@ -27,4 +27,8 @@ public class Sign_Up_Next extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    public void signup_success(View V){
+        Intent intent = new Intent(this,Signup_Success.class);
+        startActivity(intent);
+    }
 }

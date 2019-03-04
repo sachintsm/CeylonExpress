@@ -1,8 +1,10 @@
 package com.industrialmaster.ceylonexpress;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Sign_In extends AppCompatActivity {
 
@@ -22,5 +24,9 @@ public class Sign_In extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void deals(View v){
+        Intent intent = new Intent(this, deals.class);
+        startActivity(intent);
     }
 }

@@ -112,6 +112,7 @@
                 android:textColor="#ffffff"
                 android:textSize="18dp"
                 android:clickable="true"
+                android:onClick="signup_success"
                 />
         </LinearLayout>
     </LinearLayout>
