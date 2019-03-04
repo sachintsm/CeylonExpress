@@ -1,5 +1,6 @@
 package com.industrialmaster.ceylonexpress;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -88,5 +89,13 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void signUp(View v){
+        Intent intent = new Intent(this,Sign_Up.class);
+        startActivity(intent);
+    }
+    public void signIn(View v){
+        Intent intent = new Intent(this,Sign_In.class);
+        startActivity(intent);
     }
 }

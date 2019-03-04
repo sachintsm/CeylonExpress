@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/log_back"
+    android:padding="10dp"
+    tools:context=".Sign_In">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:src="@drawable/logos"
+        android:scaleType="fitCenter"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/uname"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorDivider"
+        android:backgroundTint="@color/colorDivider"
+        android:textSize="18dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/email"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorDivider"
+        android:backgroundTint="@color/colorDivider"
+        android:textSize="18dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/password"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorDivider"
+        android:backgroundTint="@color/colorDivider"
+        android:inputType="textPassword"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorDivider"
+        android:hint="@string/confirmpass"
+        android:inputType="textPassword"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorDivider"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPassword"
+        android:hint="@string/nicNumber"
+        android:textSize="18dp"
+        android:textColorHint="@color/colorDivider"
+        android:backgroundTint="@color/colorDivider"
+        android:textColor="@color/colorText"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="@string/next"
+                android:background="@drawable/rounded_buttton"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:clickable="true"
+                android:onClick="signupNext"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
