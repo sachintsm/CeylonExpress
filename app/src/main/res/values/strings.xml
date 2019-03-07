@@ -28,5 +28,10 @@
     <string name="thankyou">Thank you</string>
     <string name="success">Your CEYLON EXPRESS account is successfully created!</string>
     <string name="title_activity_deals">deals</string>
+    <string name="mobilenumber">Mobile Number (07X XXXXXXX)</string>
+    <string name="reset">Reset</string>
+    <string name="orders">Orders</string>
+    <string name="cart">Cart</string>
+    <string name="coupons">Coupons</string>
 
 </resources>
