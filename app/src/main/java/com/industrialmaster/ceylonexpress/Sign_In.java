@@ -33,4 +33,8 @@ public class Sign_In extends AppCompatActivity {
         Intent intent = new Intent(this,forgotPassword.class);
         startActivity(intent);
     }
+    public void prof(View v){
+        Intent intent = new Intent(this,profile.class);
+        startActivity(intent);
+    }
 }

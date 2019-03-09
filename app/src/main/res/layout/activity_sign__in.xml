@@ -90,5 +90,6 @@
         android:textAlignment="center"
         android:textSize="14dp"
         android:clickable="true"
+        android:onClick="prof"
         />
 </LinearLayout>
